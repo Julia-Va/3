@@ -18,7 +18,6 @@ class Library:
             if book.id == book_id:
                 return index
         raise ValueError("Книги с запрашиваемым id не существует")
-
 # Пример использования класса Library
 if __name__ == "__main__":
     # Создание экземпляра библиотеки
