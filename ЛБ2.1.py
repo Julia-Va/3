@@ -12,3 +12,8 @@ class Book:
     def __repr__(self):
         """Возвращает валидную строку для создания идентичного экземпляра книги."""
         return f'Book(id_={self.id}, name={repr(self.name)}, pages={self.pages})'
+# Пример использования класса Book
+if __name__ == "__main__":
+    book = Book(1, '1984', 328)
+    print(book)          # Вывод: Книга "1984"
+    print(repr(book))    # Вывод: Book(id_=1, name='1984', pages=328)
