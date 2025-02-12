@@ -49,7 +49,6 @@ class PaperBook(Book):
         """Возвращает валидную строку для создания идентичного экземпляра бумажной книги."""
         return f'PaperBook(name={repr(self.name)}, author={repr(self.author)}, pages={self.pages})'
 
-
 class AudioBook(Book):
     def __init__(self, name, author, duration):
         """Инициализация атрибутов аудиокниги."""
